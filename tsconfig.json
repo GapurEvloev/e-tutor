@@ -7,7 +7,7 @@
     // This only means that in such situations, the developer must explicitly write "any",
     "noImplicitAny": true,
     // module - how to compile modules. There are two options: commonjs and es6.
-    "module": "es2020", // variants: commonjs, es6, es2015, ESNext, etc. commonjs - for node.js, for backend
+    "module": "ESNext", // variants: commonjs, es6, es2015, ESNext, etc. commonjs - for node.js, for backend
     // In which specification we compile: to support most browsers
     "target": "es5",
     // jsx - allows you to use jsx syntax
@@ -38,14 +38,9 @@
     // import React from 'react';
     "allowSyntheticDefaultImports": true
   },
-  "ts-node": {
+  "ts-node": { // for ts-node
     "compilerOptions": {
       "module": "CommonJS"
     }
   },
-  "include": [
-    "./config/jest/setupTests.ts",
-    "src/**/*.{ts,tsx}",
-    "src"
-  ],
 }

@@ -1,8 +1,8 @@
-const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
+import path from 'path';
+import webpack from 'webpack';
+import HTMLWebpackPlugin from 'html-webpack-plugin';
 
-module.exports = {
+const config: webpack.Configuration = {
   mode: 'development', // 'production' or 'development'
   entry: path.resolve(__dirname, 'src', 'index.ts'), // the entry point of the app (where the bundler starts the bundling process)
   output: {
@@ -29,4 +29,6 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'], // resolve these extensions
   },
-}
+};
+
+export default config;

@@ -1,3 +1,3 @@
 import {test} from './test';
 
-test(234);
+console.log(test(1));
